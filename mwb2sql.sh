@@ -10,7 +10,7 @@ export INPUT=$(cd $(dirname $1);pwd)/$(basename $1)
 export OUTPUT=$(cd $(dirname $2);pwd)/$(basename $2)
 
 "$MYSQL_WORKBENCH" \
-  --open $INPUT \
+  --model $INPUT \
   --run-python "
 import os
 import grt
