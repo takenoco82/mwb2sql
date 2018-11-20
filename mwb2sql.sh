@@ -3,7 +3,7 @@
 # prepare: set env MYSQL_WORKBENCH
 
 if [ "$MYSQL_WORKBENCH" = "" ]; then
-  export MYSQL_WORKBENCH="mysql-workbench"
+  export MYSQL_WORKBENCH="/Applications/MySQLWorkbench.app/Contents/MacOS/MySQLWorkbench"
 fi
 
 export INPUT=$(cd $(dirname $1);pwd)/$(basename $1)
